@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anujay Sah — Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%2300e5a0'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-weight='900' font-size='17' fill='%230a0d14'>AS</text></svg>">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Serif:ital@0;1&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="logo">
+      <svg class="logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="10" fill="var(--accent)"/>
+        <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle"
+          font-family="Syne" font-weight="800" font-size="18" fill="var(--bg)">AS</text>
+      </svg>
+      <span class="logo-name">Anujay Sah</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="toggle-icon sun">&#9728;</span>
+      <span class="toggle-icon moon">&#9789;</span>
+    </button>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mob-link">About</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#projects" class="mob-link">Projects</a>
+    <a href="#certifications" class="mob-link">Certs</a>
+    <a href="#contact" class="mob-link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        <span>Open to Internships &amp; Opportunities</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line1">Hi, I'm</span>
+        <span class="line2">Anujay<em>.</em></span>
+      </h1>
+      <p class="hero-sub">
+        Computer Science undergrad at <strong>SGSITS Indore</strong> — 
+        building full-stack apps, solving DSA problems, 
+        and turning ideas into real products.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">150+</span>
+          <span class="stat-label">DSA Problems</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="38" r="22" fill="var(--accent)" opacity=".2"/>
+            <circle cx="50" cy="36" r="18" fill="var(--accent)" opacity=".4"/>
+            <text x="50%" y="42%" dominant-baseline="middle" text-anchor="middle"
+              font-family="Syne" font-weight="800" font-size="28" fill="var(--accent)">AS</text>
+            <ellipse cx="50" cy="80" rx="28" ry="14" fill="var(--accent)" opacity=".15"/>
+          </svg>
+        </div>
+      </div>
+      <div class="floating-badge badge-java">Java</div>
+      <div class="floating-badge badge-sql">SQL</div>
+      <div class="floating-badge badge-web">Web Dev</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">// about me</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a <strong>B.Tech Computer Science</strong> student at SGSITS Indore (graduating 2027), passionate about building software that solves real problems. My journey started with curiosity about how apps work, and today I write production-ready code across the stack.</p>
+          <p>I enjoy grinding DSA problems on LeetCode &amp; HackerRank — it sharpens how I think about problems. When I'm not coding, I'm exploring new technologies and attending workshops to stay ahead of the curve.</p>
+          <div class="about-edu">
+            <h3>Education</h3>
+            <div class="edu-item">
+              <div class="edu-icon">&#127891;</div>
+              <div>
+                <strong>B.Tech — Computer Science</strong>
+                <span>SGSITS Indore &nbsp;|&nbsp; CGPA: 7.0 &nbsp;|&nbsp; 2027</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-icon">&#127979;</div>
+              <div>
+                <strong>Class XII — Bal Bharati Public School</strong>
+                <span>Anuppur &nbsp;|&nbsp; 70.8% &nbsp;|&nbsp; 2022</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-icon">&#128218;</div>
+              <div>
+                <strong>Class X — Kendriya Vidyalaya SECL</strong>
+                <span>Jamuna colliery &nbsp;|&nbsp; 72.2% &nbsp;|&nbsp; 2020</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-aside">
+          <div class="about-card">
+            <h4>&#128205; Location</h4>
+            <p>Indore, Madhya Pradesh</p>
+          </div>
+          <div class="about-card">
+            <h4>&#128236; Email</h4>
+            <p><a href="mailto:sahanujay@gmail.com">sahanujay@gmail.com</a></p>
+          </div>
+          <div class="about-card">
+            <h4>&#128483; Languages</h4>
+            <p>English, Hindi</p>
+          </div>
+          <div class="about-card highlight-card">
+            <h4>&#128293; Currently</h4>
+            <p>Seeking internship roles in Software Development / Web Development</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label">// technical skills</div>
+      <h2 class="section-title">What I Work With</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="skill-pills">
+            <span class="pill pill-main">Java</span>
+            <span class="pill pill-main">Python</span>
+            <span class="pill">SQL</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks &amp; Runtime</h3>
+          <div class="skill-pills">
+            <span class="pill pill-main">Node.js</span>
+            <span class="pill">Core Java</span>
+            <span class="pill">Advanced Java</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Databases &amp; Tools</h3>
+          <div class="skill-pills">
+            <span class="pill pill-main">PostgreSQL</span>
+            <span class="pill pill-main">MySQL</span>
+            <span class="pill">Git</span>
+            <span class="pill">VS Code</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>CS Concepts</h3>
+          <div class="skill-pills">
+            <span class="pill">DSA</span>
+            <span class="pill">OOP</span>
+            <span class="pill">DBMS</span>
+            <span class="pill">OS</span>
+            <span class="pill">Computer Networks</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Soft Skills</h3>
+          <div class="skill-pills">
+            <span class="pill pill-soft">Problem Solving</span>
+            <span class="pill pill-soft">Team Collaboration</span>
+            <span class="pill pill-soft">Adaptability</span>
+          </div>
+        </div>
+      </div>
+      <div class="dsa-banner">
+        <div class="dsa-icon">&#9889;</div>
+        <div>
+          <strong>150+ DSA Problems Solved</strong>
+          <span>on LeetCode &amp; HackerRank — arrays, trees, graphs, dynamic programming &amp; more</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label">// projects</div>
+      <h2 class="section-title">Things I've Built</h2>
+      <div class="projects-grid">
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-num">01</div>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>Skill Sharing Web Platform</h3>
+          <p>A collaborative platform for users to share and learn skills, featuring peer-to-peer learning, role-based access control, and content-sharing for 100+ users.</p>
+          <div class="project-features">
+            <span>&#10003; Authentication System</span>
+            <span>&#10003; Role-based Access</span>
+            <span>&#10003; Content Sharing</span>
+          </div>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-num">02</div>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>Student Management System</h3>
+          <p>A full-featured system to manage student records with registration, update, delete, and search functionality — built with a user-friendly Java interface.</p>
+          <div class="project-features">
+            <span>&#10003; CRUD Operations</span>
+            <span>&#10003; Search &amp; Filter</span>
+            <span>&#10003; User-friendly UI</span>
+          </div>
+          <div class="project-tech">
+            <span>Java</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <div class="section-label">// certifications &amp; achievements</div>
+      <h2 class="section-title">Credentials</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon">&#127760;</div>
+          <h4>Web Development</h4>
+          <p>Certificate in modern web development practices</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">&#9749;</div>
+          <h4>Java Advanced</h4>
+          <p>Certificate in Advanced Java programming</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">&#128722;</div>
+          <h4>Flipkart SCOA</h4>
+          <p>Certificate from Flipkart Skills Competency Assessment</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">&#9939;</div>
+          <h4>Blockchain Technology</h4>
+          <p>Workshop on Blockchain fundamentals &amp; use-cases</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label">004 — CONTACT ME</div>
+      <div class="contact-wrap">
+
+        <!-- Left -->
+        <div class="contact-left">
+          <h2 class="contact-big">
+            <span>LET'S</span>
+            <span>WORK</span>
+            <span class="contact-accent">TOGETHER.</span>
+          </h2>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <span class="ci-icon">&#128205;</span>
+              <span>Indore, Madhya Pradesh</span>
+            </div>
+            <div class="contact-info-item">
+              <span class="ci-icon">&#9993;</span>
+              <span>sahanujay@gmail.com</span>
+            </div>
+            <div class="contact-info-item">
+              <span class="ci-icon">&#128222;</span>
+              <span>+91 8602479717</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://linkedin.com" target="_blank">LINKEDIN</a>
+            <a href="https://github.com/codewithanujay" target="_blank">GITHUB</a>
+            <a href="https://leetcode.com" target="_blank">LEETCODE</a>
+            <a href="mailto:sahanujay@gmail.com">EMAIL</a>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-right">
+          <div class="cf-field">
+            <label class="cf-label">YOUR NAME *</label>
+            <input class="cf-input" id="cfName" type="text" placeholder="Recruiter / Collaborator" />
+          </div>
+          <div class="cf-field">
+            <label class="cf-label">EMAIL ADDRESS *</label>
+            <input class="cf-input" id="cfEmail" type="email" placeholder="you@company.com" />
+          </div>
+          <div class="cf-field">
+            <label class="cf-label">SUBJECT</label>
+            <input class="cf-input" id="cfSubject" type="text" placeholder="Internship Opportunity / Project" />
+          </div>
+          <div class="cf-field">
+            <label class="cf-label">MESSAGE *</label>
+            <textarea class="cf-input cf-textarea" id="cfMessage" placeholder="Tell me about the opportunity or project..."></textarea>
+          </div>
+          <button class="cf-btn" id="sendBtn">SEND MESSAGE &#8594;</button>
+          <p class="cf-success" id="cfSuccess">&#10003; Message sent! I'll get back to you soon.</p>
+          <p class="cf-error" id="cfError">&#10007; Something went wrong. Please try again or email me directly.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+        <rect width="32" height="32" rx="8" fill="var(--accent)"/>
+        <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle"
+          font-family="Syne" font-weight="800" font-size="14" fill="var(--bg)">AS</text>
+      </svg>
+      <span>Anujay Sah</span>
+    </div>
+    <p>Built with &#10084;&#65039; &amp; lots of coffee &nbsp;&#183;&nbsp; B.Tech CSE @ SGSITS Indore</p>
+    <p class="footer-copy">&#169; 2025 Anujay Sah. All rights reserved.</p>
+  </footer>
+
+  <!-- EmailJS SDK (loaded before script.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
