@@ -1,27 +1,12 @@
-/* ============================================
-   ANUJAY SAH PORTFOLIO — script.js
-   ============================================ */
 
-/* ──────────────────────────────────────────
-   ★  EmailJS Configuration
-   ─────────────────────────────────────────
-   Steps to set up:
-   1. Sign up free at https://www.emailjs.com
-   2. Add an Email Service (Gmail) → copy Service ID
-   3. Create an Email Template with variables:
-        {{from_name}}  {{from_email}}  {{subject}}  {{message}}
-      → copy Template ID
-   4. Go to Account → API Keys → copy Public Key
-   5. Paste all three values below
-   ────────────────────────────────────────── */
-const EMAILJS_PUBLIC_KEY  = 'llFuBeXc-wFBbEgQP';    // e.g. 'abc123XYZ'
-const EMAILJS_SERVICE_ID  = 'service_mtlvtp7';    // e.g. 'service_xxxxxx'
-const EMAILJS_TEMPLATE_ID = 'template_lb55e97';   // e.g. 'template_xxxxxx'
+const EMAILJS_PUBLIC_KEY  = 'llFuBeXc-wFBbEgQP';   
+const EMAILJS_SERVICE_ID  = 'service_mtlvtp7';    
+const EMAILJS_TEMPLATE_ID = 'template_lb55e97';   
 
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ── Init EmailJS ──
+  
   emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
   // ── Theme Toggle ──
@@ -187,12 +172,12 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(() => {
         sendBtn.textContent = 'SENT ✓';
         cfSuccess.classList.add('show');
-        // Clear inputs
+        
         ['cfName', 'cfEmail', 'cfSubject', 'cfMessage'].forEach(id => {
           const el = document.getElementById(id);
           if (el) el.value = '';
         });
-        // Reset button after 4s
+       
         setTimeout(() => {
           sendBtn.textContent = 'SEND MESSAGE \u2192';
           sendBtn.disabled = false;
@@ -208,4 +193,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-}); // end DOMContentLoaded
+}); 
